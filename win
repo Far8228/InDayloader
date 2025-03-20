@@ -7,6 +7,7 @@ local Frame_2 = Instance.new("Frame")
 local Frame_3 = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
 local LaunchButton = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
@@ -81,7 +82,14 @@ TextLabel_3.Size = UDim2.new(0, 159, 0, 25)
 TextLabel_3.Font = Enum.Font.SourceSansSemibold
 TextLabel_3.Text = "Stable on any executor"
 TextLabel_3.TextColor3 = Color3.fromRGB(5, 255, 22)
-TextLabel_3.TextSize = 19.000
+TextLabel_3.TextSize = 18.000
+
+ImageLabel.Parent = TextButton
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0, 62, 0, 51)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=125463281648603"
 
 LaunchButton.Name = "LaunchButton"
 LaunchButton.Parent = Frame
@@ -111,7 +119,7 @@ UICorner_2.Parent = Frame
 
 -- Scripts:
 
-local function DXSWV_fake_script() -- TextButton.LocalScript 
+local function UHXHB_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	--[[local textButton = script.Parent
@@ -135,8 +143,8 @@ local function DXSWV_fake_script() -- TextButton.LocalScript
 	end)]]
 	
 end
-coroutine.wrap(DXSWV_fake_script)()
-local function PFRSM_fake_script() -- LaunchButton.LocalScript 
+coroutine.wrap(UHXHB_fake_script)()
+local function ZAZCPW_fake_script() -- LaunchButton.LocalScript 
 	local script = Instance.new('LocalScript', LaunchButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -144,8 +152,8 @@ local function PFRSM_fake_script() -- LaunchButton.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/InDayrecode/refs/heads/main/InDay.lua"))()
 	end)
 end
-coroutine.wrap(PFRSM_fake_script)()
-local function TOQYJ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(ZAZCPW_fake_script)()
+local function IRQEHH_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -154,11 +162,11 @@ local function TOQYJ_fake_script() -- TextButton_2.LocalScript
 		script.Parent.Parent.Parent.Frame.BackgroundTransparency = 1
 	end)
 end
-coroutine.wrap(TOQYJ_fake_script)()
-local function IYTA_fake_script() -- Frame.LocalScript 
+coroutine.wrap(IRQEHH_fake_script)()
+local function YMGUHV_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(IYTA_fake_script)()
+coroutine.wrap(YMGUHV_fake_script)()
